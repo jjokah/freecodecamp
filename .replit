@@ -1,5 +1,4 @@
-entrypoint = "main.py"
-modules = ["python-3.12"]
+modules = ["python-3.12", "web"]
 
 [nix]
 channel = "stable-24_05"

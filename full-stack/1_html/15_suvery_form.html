@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 id="title">Subconscious Questionaire</h1>
+      <p id="description">This questionaire will be used to understand your unconscious in order to align it properly.</p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <label id="name-label" for="name">Name: </label>
+        <input id="name" name="name" type="text" placeholder="John Doe" required>
+        <label id="email-label" for="email">Email: </label>
+        <input id="email" name="email" type="email" placeholder="example@email.com" required>
+        <label id="number-label" for="number">Age: </label>
+        <input id="number" name="age" type="number" min="3" max="120"  placeholder="40">
+        <label for="dropdown">When are you most active?</label>
+        <select id="dropdown" name="active-time">
+          <option value="day">Day</option>
+          <option value="night">Night</option>
+        </select>
+        <fieldset>
+          <legend>Gender</legend>
+          <input id="male-option" type="radio" name="gender" value="male">
+          <label for="male-option">Male</label>
+          <input id="female-option" type="radio" name="gender" value="female">
+          <label for="female-option">Female</label>
+        </fieldset>
+        <fieldset>
+          <legend>What was your most recent dream about? (Check all that apply)</legend>
+          <input id="work-choice" type="checkbox" name="recent-dream" value="work-choice">
+          <label for="work-choice">Work</label>
+          <input id="relationship-choice" type="checkbox" name="recent-dream" value="relationship-choice">
+          <label for="relationship-choice">Relationship</label>
+          <input id="hobbies-choice" type="checkbox" name="recent-dream" value="hobbies-choice">
+          <label for="hobbies-choice">Hobbies</label>
+        </fieldset>
+        <label for="thoughts">What have you thought about today?</label>
+        <textarea id="thoughts" name="thought" placeholder="Share your thoughts..."></textarea>
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Checkout Page</title>
+</head>
+
+<body>
+    <h1>Checkout</h1>
+    <section>
+        <h2>Your Cart</h2>
+        <img src="https://cdn.freecodecamp.org/curriculum/labs/cube.jpg" alt="an unsolved rubik cude">
+        <p>Rubik's Cube</p>
+        <p>₦4,000</p>
+    </section>
+
+    <section>
+        <h2>Payment Information</h2>
+        <form>
+            <label for="card-name">Cardholder Name<span aria-hidden="true">*<span> </label>
+            <input id="card-name" name="card-name" type="text" required>
+            <label for="card-number">Card Number<span aria-hidden="true">*</span> </label>
+            <input id="card-number" name="card-number" type="text" aria-describedby="card-number-help" required>
+            <p id="card-number-help">Enter the 15 or 16-digit number from the front of your card. Spaces or dashes are allowed.</p>
+            <label for="card-expiry-date">Expiry Date<span aria-hidden="true">*</span> </label>
+            <input id="card-expiry-date" name="card-expiry-date" type="text" placeholder="MM/YY">
+            <label for="card-cvv">CVV<span aria-hidden="true">*</span></label>
+            <input id="card-cvv" name="card-cvv" type="text">
+            <button type="submit">Place Order</input>
+        </form>
+    </section>
+</body>
+
+</html>
